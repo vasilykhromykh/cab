@@ -132,7 +132,7 @@ function App() {
         <h1>{days[day-1][x+1]}</h1>
 
 <div>
-        <button onClick={()=>refreshPage()}>бновить</button>
+        <button onClick={()=>refreshPage()}>Обновить</button>
   <a href='https://t.me/whoecho'>by @whoecho</a>
 </div>
       </div>
