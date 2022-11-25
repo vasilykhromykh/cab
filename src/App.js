@@ -10,7 +10,7 @@ function App() {
 
   let newDate = new Date()
 
-  let time = newDate.getHours().toString()+ newDate.getMinutes().toString()
+  let time =newDate.getHours().toString()+ newDate.getMinutes().toString()
   let day= newDate.getDay()
 
   let First = 915
@@ -119,6 +119,9 @@ function App() {
     case(Number(time) < Seventh):
       x=7;
       break;
+    case(Number(time) > Seventh):
+      x=8;
+      break;
   }
 
 
@@ -129,7 +132,7 @@ function App() {
   return (
       <div className='App' >
 
-        <h1>{days[day-1][x+1]}</h1>
+        <h1>{days[day-1][x]}</h1>
 
 <div>
         <button onClick={()=>refreshPage()}>Обновить</button>
