@@ -128,11 +128,11 @@ function App() {
   function refreshPage() {
     window.location.reload();
   }
-  console.log(time)
+  console.log(days)
   return (
       <div className='App' >
 
-        <h1>{days[day-1][x]}</h1>
+        <h1>{days[day===0? 6 :day-1][x]}</h1>
 
 <div>
         <button onClick={()=>refreshPage()}>Обновить</button>
